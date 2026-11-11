@@ -6,6 +6,23 @@ Arc Lite is an AI-powered FAQ assistant developed as part of the ArchintX AI Eng
 
 It provides answers to user questions using an approved FAQ knowledge base. The system follows the principle **"Refuse, Don't Guess."** If a question cannot be confidently matched with an approved FAQ, Arc Lite returns a Refused or Unclear response instead of inventing an answer.
 
+## Application Screenshots
+
+### 1. Public Chat Assistant
+![Arc Lite Homepage](Screenshots/homepage.png)
+
+### 2. Successful FAQ Answer
+![FAQ Answer](Screenshots/faq-answer.png)
+
+### 3. Refused Response
+![Refused Response](Screenshots/refused-response.png)
+
+### 4. Staff Dashboard and Analytics
+![Staff Dashboard](Screenshots/staff-dashboard.png)
+
+### 5. FAQ Management
+![FAQ Management](Screenshots/staff-dashboard1.png)
+
 ## Live Application
 
 - **Frontend:** https://arc-lite-faq-assistant-capstone.vercel.app
