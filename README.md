@@ -4,18 +4,19 @@
 
 Arc Lite is an AI-powered FAQ assistant developed as part of the ArchintX AI Engineer Internship capstone.
 
-It provides answers to user questions using an approved FAQ knowledge base. The system follows the principle **"Refuse, don't guess."** If a question cannot be confidently matched with an approved FAQ, Arc Lite returns a Refused or Unclear response instead of inventing an answer.
+It provides answers to user questions using an approved FAQ knowledge base. The system follows the principle **"Refuse, Don't Guess."** If a question cannot be confidently matched with an approved FAQ, Arc Lite returns a Refused or Unclear response instead of inventing an answer.
 
 ## Live Application
 
-- **Frontend:** https://arc-lite-faq-assistant.vercel.app
+- **Frontend:** https://arc-lite-faq-assistant-capstone.vercel.app
 - **Backend API:** https://arc-lite-backend.onrender.com
 - **GitHub Repository:** https://github.com/P03wd/Arc-Lite-FAQ-Assistant-capstone
-- **Staff Dashboard:** https://arc-lite-faq-assistant.vercel.app/staff
+- **Staff Dashboard:** https://arc-lite-faq-assistant-capstone.vercel.app/staff
 
 ## Features
 
 ### Public Chat Assistant
+
 - Allows users to ask questions without logging in.
 - Matches questions against approved FAQ entries.
 - Displays the matched category: Courses, Certificates, Jobs, or Account.
@@ -24,6 +25,7 @@ It provides answers to user questions using an approved FAQ knowledge base. The 
 - Supports thumbs-up and thumbs-down feedback.
 
 ### Staff Dashboard
+
 - Secure staff login using email and password.
 - JWT-based authentication.
 - Add and edit FAQ entries.
@@ -119,7 +121,7 @@ Arc Lite uses TF-IDF (Term Frequency–Inverse Document Frequency) and cosine si
 2. The backend processes the question and compares it against the FAQ knowledge base.
 3. TF-IDF converts the FAQ text and user question into numerical representations.
 4. Cosine similarity calculates how closely the question matches the approved FAQ entries.
-5. The backend checks the similarity score against the configured confidence threshold of 0.25.
+5. The backend checks the similarity score against the configured confidence threshold of `0.25`.
 6. If a sufficiently confident match is found, Arc Lite returns the approved canonical answer and its category.
 7. If no confident match is found, Arc Lite returns Refused or Unclear rather than generating an unsupported answer.
 8. Every conversation and its actual response time are stored in the database.
