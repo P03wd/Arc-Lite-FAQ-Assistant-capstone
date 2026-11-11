@@ -10,7 +10,7 @@ It provides answers to user questions using an approved FAQ knowledge base. The 
 
 - **Frontend:** https://arc-lite-faq-assistant.vercel.app
 - **Backend API:** https://arc-lite-backend.onrender.com
-- **GitHub Repository:** https://github.com/P03wd/Arc-Lite-FAQ-Assistant
+- **GitHub Repository:** https://github.com/P03wd/Arc-Lite-FAQ-Assistant-capstone
 - **Staff Dashboard:** https://arc-lite-faq-assistant.vercel.app/staff
 
 ## Features
@@ -52,7 +52,7 @@ It provides answers to user questions using an approved FAQ knowledge base. The 
 ## Project Structure
 
 ```text
-Arc-Lite-FAQ-Assistant/
+Arc-Lite-FAQ-Assistant-capstone/
 │
 ├── backend/
 │   ├── main.py
@@ -151,8 +151,8 @@ Staff-only endpoints require valid authentication.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/P03wd/Arc-Lite-FAQ-Assistant.git
-cd Arc-Lite-FAQ-Assistant
+git clone https://github.com/P03wd/Arc-Lite-FAQ-Assistant-capstone.git
+cd Arc-Lite-FAQ-Assistant-capstone
 ```
 
 ### 2. Backend Setup
