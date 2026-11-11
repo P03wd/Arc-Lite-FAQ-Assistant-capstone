@@ -9,26 +9,36 @@ It provides answers to user questions using an approved FAQ knowledge base. The 
 ## Application Screenshots
 
 ### 1. Public Chat Assistant
+
 ![Arc Lite Homepage](Screenshots/homepage.png)
 
 ### 2. Successful FAQ Answer
+
 ![FAQ Answer](Screenshots/faq-answer.png)
 
 ### 3. Refused Response
+
 ![Refused Response](Screenshots/refused-response.png)
 
 ### 4. Staff Dashboard and Analytics
+
 ![Staff Dashboard](Screenshots/staff-dashboard.png)
 
-### 5. FAQ Management
-![FAQ Management](Screenshots/staff-dashboard1.png)
+### 5. Staff Feedback
+
+![Staff Feedback](Screenshots/staff-feedback.png)
+
+### 6. FAQ Management
+
+![FAQ Management](Screenshots/faq-management.png)
 
 ## Live Application
 
 - **Frontend:** https://arc-lite-faq-assistant-capstone.vercel.app
-- **Backend API:** https://arc-lite-backend.onrender.com
-- **GitHub Repository:** https://github.com/P03wd/Arc-Lite-FAQ-Assistant-capstone
 - **Staff Dashboard:** https://arc-lite-faq-assistant-capstone.vercel.app/staff
+- **Backend API:** https://arc-lite-backend.onrender.com
+- **Backend API Documentation:** https://arc-lite-backend.onrender.com/docs
+- **GitHub Repository:** https://github.com/P03wd/Arc-Lite-FAQ-Assistant-capstone
 
 ## Features
 
@@ -40,17 +50,20 @@ It provides answers to user questions using an approved FAQ knowledge base. The 
 - Returns Answered, Refused, or Unclear verdicts.
 - Records every conversation in the database.
 - Supports thumbs-up and thumbs-down feedback.
+- Avoids generating unsupported or invented answers.
 
 ### Staff Dashboard
 
 - Secure staff login using email and password.
 - JWT-based authentication.
-- Add and edit FAQ entries.
-- View total conversation statistics.
+- Add and edit approved FAQ entries.
+- Search FAQ entries by question and keywords.
+- Filter FAQ entries by category.
+- View total conversations and FAQ statistics.
+- View positive and negative feedback counts.
 - View verdict rates by category.
 - View average response time by category.
-- Review conversations marked Answered but rated down.
-- Review conversations marked Answered but rated up.
+- Review positive and negative user feedback.
 
 ## Technology Stack
 
@@ -84,6 +97,14 @@ Arc-Lite-FAQ-Assistant-capstone/
 │   │   └── ...
 │   ├── package.json
 │   └── ...
+│
+├── Screenshots/
+│   ├── homepage.png
+│   ├── faq-answer.png
+│   ├── refused-response.png
+│   ├── staff-dashboard.png
+│   ├── staff-feedback.png
+│   └── faq-management.png
 │
 ├── .gitignore
 ├── vercel.json
@@ -149,6 +170,7 @@ The matching configuration uses lowercase text processing, English stop-word rem
 
 | Method | Endpoint | Access | Purpose |
 |---|---|---|---|
+| GET | `/` | Public | Backend health check |
 | POST | `/chat` | Public | Submit a question and receive an answer |
 | POST | `/chat/{id}/rate` | Public | Submit thumbs-up or thumbs-down feedback |
 | POST | `/auth/login` | Public | Staff authentication |
